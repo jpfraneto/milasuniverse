@@ -1,19 +1,19 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "milasuniverse",
+    title: "Mila's Universe",
   },
   plugins: [
-    "gatsby-plugin-sass",
-    "gatsby-plugin-gatsby-cloud",
-    "gatsby-plugin-mdx",
+    'gatsby-plugin-sass',
+    'gatsby-plugin-gatsby-cloud',
+    'gatsby-plugin-mdx',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: 'blog',
+        path: `${__dirname}/blog`,
       },
-      __key: "pages",
     },
   ],
 };
