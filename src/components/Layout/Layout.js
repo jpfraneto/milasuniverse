@@ -42,6 +42,11 @@ export const Layout = ({ pageTitle, children }) => {
               Blog
             </Link>
           </li>
+          <li className={navLinkItem}>
+            <Link to='/stories' className={navLinkText}>
+              Stories
+            </Link>
+          </li>
         </ul>
       </nav>
       <main>
