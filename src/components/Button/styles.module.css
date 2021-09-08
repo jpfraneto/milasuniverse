@@ -1,0 +1,18 @@
+.btn {
+  background-color: blueviolet;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 100rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(115, 39, 187);
+  box-shadow: 0.1rem 0.1rem black;
+  transform: translateY(-0.3rem);
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translateY(-0.2rem);
+}

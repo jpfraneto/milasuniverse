@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Layout } from '../../components';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { Link, graphql } from 'gatsby';
+import { graphql, navigate } from 'gatsby';
 
 const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image);
@@ -17,7 +17,13 @@ const BlogPost = ({ data }) => {
         </a>
       </p>
       <MDXRenderer>{data.mdx.body}</MDXRenderer>
-      <Link to='/blog'>Go back to blog</Link>
+      <button
+        onClick={() => {
+          navigate(-1);
+        }}
+      >
+        Go Back
+      </button>
     </Layout>
   );
 };

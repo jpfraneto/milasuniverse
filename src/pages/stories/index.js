@@ -1,19 +1,20 @@
 import * as React from 'react';
 import { Link, graphql } from 'gatsby';
-import { Layout } from '../../components';
+import { Layout, StoryContainer } from '../../components';
+import '../../styles/global.css';
+import './stories.css';
 
 const StoriesPage = ({ data }) => {
   return (
     <main>
       <Layout pageTitle='The stories'>
-        {data.allMdx.nodes.map(node => (
-          <article key={node.id}>
-            <h2>
-              <Link to={`/stories/${node.slug}`}>{node.frontmatter.title}</Link>
-            </h2>
-            <p>Posted: {node.frontmatter.date}</p>
-          </article>
-        ))}
+        <div className='storiescontainer'>
+          {data.allMdx.nodes.map(node => (
+            <div>
+              <StoryContainer node={node} />
+            </div>
+          ))}
+        </div>
       </Layout>
     </main>
   );
@@ -30,6 +31,11 @@ export const query = graphql`
           author
           date
           title
+          hero_image {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
         }
         id
         slug

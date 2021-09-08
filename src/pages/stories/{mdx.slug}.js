@@ -1,17 +1,11 @@
 import * as React from 'react';
-import { Layout } from '../../components';
-import { graphql } from 'gatsby';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { Layout, StoryDisplay } from '../../components';
+import { graphql, navigate } from 'gatsby';
 
 const StoryPage = ({ data }) => {
-  const image = getImage(data.mdx.frontmatter.hero_image);
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
-      <h1>Written by {data.mdx.frontmatter.author}</h1>
-      <p>Published in {data.mdx.frontmatter.date}</p>
-      <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt} />
-      <MDXRenderer>{data.mdx.body}</MDXRenderer>
+      <StoryDisplay data={data} />
     </Layout>
   );
 };

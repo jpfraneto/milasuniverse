@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+.story-hero-image {
+  border-radius: 1rem;
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.story-container-div {
+  text-align: center;
+  border-radius: 1rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.story-text-container {
+  margin: 2rem 0;
+  padding: 0 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.story-text-container p {
+  color: #000;
+  margin-bottom: 2rem;
+  font-family: 'Libre Baskerville', serif;
+}
