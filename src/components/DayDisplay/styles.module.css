@@ -1,0 +1,14 @@
+.container {
+  height: 66vh;
+  background: rgb(168, 168, 211);
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+.aboutDiv {
+  background-color: teal;
+  display: flex;
+  padding: 8px;
+}
+
+.aboutImage {
+  width: 60vh;
+  height: auto;
+  border-radius: 2px;
+}
+
+.aboutText {
+  padding: 8px;
+  font-size: 1.6rem;
+  background-color: tomato;
+  width: 100%;
+  font-family: 'Libre Baskerville', serif;
+}

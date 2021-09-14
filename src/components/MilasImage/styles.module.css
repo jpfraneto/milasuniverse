@@ -1,0 +1,12 @@
+.fotoMila {
+  width: 444px;
+  height: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .fotoMila {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+  }
+}

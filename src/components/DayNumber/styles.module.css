@@ -1,0 +1,53 @@
+.daySpan {
+  width: 20px;
+  height: 20px;
+  margin: 4px;
+  background-color: tomato;
+  border-radius: 50%;
+  border: solid 1px black;
+  cursor: pointer;
+}
+
+.daySpan:hover {
+  background-color: yellowgreen;
+  transform: translateY(-1px);
+  box-shadow: black 1px 1px;
+}
+
+.selectedDaySpan {
+  background-color: rgb(162, 63, 46);
+  color: white;
+  width: 20px;
+  height: 20px;
+  margin: 4px;
+  transform: scale(1.3);
+  border-radius: 50%;
+  border: solid 1px black;
+  cursor: pointer;
+  animation: pushBtn 1s linear;
+}
+
+@keyframes pushBtn {
+  0% {
+    transform: translateY(-1px);
+    box-shadow: black 1px 1px;
+  }
+  50% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0) scale(1.3);
+    box-shadow: none;
+  }
+}
+
+.nonAvailableDay {
+  background-color: transparent;
+  color: black;
+  width: 20px;
+  height: 20px;
+  margin: 4px;
+  border-radius: 50%;
+  border: solid 1px black;
+  cursor: not-allowed;
+}

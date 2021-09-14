@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import { Navbar } from '..';
-import { container, outerDiv, heading, siteTitle } from './styles.module.css';
+import { container, outerDiv, heading } from './styles.module.css';
 
 export const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`

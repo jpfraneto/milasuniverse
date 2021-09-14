@@ -1,6 +1,6 @@
 .nav-title {
   display: flex;
-  color: #55a630;
+  color: black;
 }
 
 .nav-title:hover {
@@ -14,11 +14,25 @@
 }
 
 .navbar {
+  position: relative;
   font-size: 2.6rem;
-  background-color: #ffff3f;
+  background-color: #757bc8;
   display: flex;
   padding: 0 2rem;
   border-bottom: 2px dashed black;
+}
+
+.toggle-nav-btn {
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+  cursor: pointer;
+  display: none;
+  font-size: 3.2rem;
+  margin: 0;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-links {
@@ -34,7 +48,7 @@
 }
 
 .nav-link-item:hover {
-  color: #55a630;
+  color: white;
   border-radius: 100rem;
 }
 
@@ -44,5 +58,52 @@
 }
 
 .nav-link-text:hover {
-  color: #55a630;
+  color: white;
+}
+
+.toggled-nav-list {
+  list-style: none;
+  width: 100%;
+  animation: topDown 4s linear;
+}
+
+@keyframes topDown {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.toggled-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.toggled-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 800px) {
+  .toggle-nav-btn {
+    display: flex;
+    animation: fadeIn linear 1s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .nav-links {
+    display: none;
+  }
 }

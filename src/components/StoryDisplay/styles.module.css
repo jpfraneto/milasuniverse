@@ -9,8 +9,18 @@
 
 .story-container-div {
   text-align: center;
+  margin: auto;
+  width: 66%;
   border-radius: 1rem;
   padding: 0 2rem 2rem 2rem;
+}
+
+.story-author {
+  font-size: 1.3rem;
+}
+
+.date-text {
+  font-size: 1.618rem;
 }
 
 .story-text-container {
@@ -24,4 +34,10 @@
   color: #000;
   margin-bottom: 2rem;
   font-family: 'Libre Baskerville', serif;
+}
+
+@media only screen and (max-width: 888px) {
+  .story-container-div {
+    width: 100%;
+  }
 }

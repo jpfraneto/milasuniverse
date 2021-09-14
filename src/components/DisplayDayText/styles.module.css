@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+.dayText {
+  font-family: 'Libre Baskerville', serif;
+  overflow-y: scroll;
+  font-size: 1.3rem;
+}
+
+.dayText p {
+  margin-bottom: 1rem;
+}

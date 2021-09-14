@@ -30,6 +30,7 @@ export const query = graphql`
         frontmatter {
           author
           date
+          language
           title
           hero_image {
             childImageSharp {

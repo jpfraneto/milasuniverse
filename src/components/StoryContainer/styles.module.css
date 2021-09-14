@@ -5,6 +5,7 @@
   height: 33vh;
   margin: 1rem;
   padding: 1rem;
+  position: relative;
 }
 
 .story-container-class:hover {
@@ -20,7 +21,7 @@
 
 .story-title {
   color: white;
-  font-size: 2rem;
+  font-size: 1.618rem;
 }
 
 .story-title:link {
@@ -29,7 +30,20 @@
 
 .story-image {
   border: solid 2px white;
-  width: 100%;
   height: 55%;
-  margin: 1rem auto;
+  margin: 1rem 0.8rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.8rem;
+}
+
+@media only screen and (max-width: 666px) {
+  .story-container-class {
+    width: 66vh;
+    height: 40vh;
+  }
+  .story-title {
+    font-size: 2.5rem;
+  }
 }

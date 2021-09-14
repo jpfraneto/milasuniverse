@@ -1,19 +1,24 @@
 import * as React from 'react';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { navigate } from 'gatsby';
 import { Button } from '..';
 import {
   storyTextContainer,
   storyHeroImage,
   storyContainerDiv,
+  storyAuthor,
+  dateText,
 } from './styles.module.css';
 
 export const StoryDisplay = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image);
   return (
     <div className={storyContainerDiv}>
-      <h1>Written by {data.mdx.frontmatter.author}</h1>
-      <p>Published in {data.mdx.frontmatter.date}</p>
+      <h2 className={storyAuthor}>
+        Written by {data.mdx.frontmatter.author} - Published in{' '}
+        {data.mdx.frontmatter.date}
+      </h2>
       <GatsbyImage
         image={image}
         alt={data.mdx.frontmatter.hero_image_alt}
@@ -22,7 +27,12 @@ export const StoryDisplay = ({ data }) => {
       <div className={storyTextContainer}>
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
       </div>
-      <Button text='Go Backkkkk' />
+      <Button
+        text='Go Back'
+        worker={() => {
+          navigate(-1);
+        }}
+      />
     </div>
   );
 };

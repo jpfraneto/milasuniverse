@@ -12,8 +12,10 @@ export const StoryContainer = ({ node }) => {
   return (
     <Link to={`/stories/${node.slug}`}>
       <article className={storyContainerClass} key={node.id}>
-        <h2 className={storyTitle}>{node.frontmatter.title}</h2>
-        <p>Posted: {node.frontmatter.date}</p>
+        <h2 className={storyTitle}>
+          {node.frontmatter.title}{' '}
+          {node.frontmatter.language === 'spanish' ? '🇪🇸' : '🇬🇧'}
+        </h2>
         <GatsbyImage className={storyImage} image={image} alt='Wena compare' />
       </article>
     </Link>

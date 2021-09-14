@@ -1,0 +1,25 @@
+.mainDiv {
+  text-align: center;
+}
+
+.daysDiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+.selectedDayOuterDiv {
+  text-align: center;
+}
+
+.selectedDayDiv {
+  background-color: violet;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  display: table-cell;
+  overflow: hidden;
+  vertical-align: middle;
+  font-size: 10rem;
+  border-radius: 50%;
+  border: solid 1px black;
+}

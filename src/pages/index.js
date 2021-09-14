@@ -1,17 +1,23 @@
 import * as React from 'react';
-import { Layout } from '../components';
-import { StaticImage } from 'gatsby-plugin-image';
-import '../styles/global.css';
+import { Layout, About } from '../components';
+import { Link, graphql } from 'gatsby';
 
-const IndexPage = () => {
+const AboutPage = ({ data }) => {
   return (
-    <Layout pageTitle='Home Page'>
-      <StaticImage
-        src='https://images.unsplash.com/photo-1503584815950-223185a0e8fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80'
-        alt='The lunatic is on the grass'
-      />
-    </Layout>
+    <main>
+      <Layout pageTitle='Bienvenid@'>
+        <About text={data.mdx.body} />
+      </Layout>
+    </main>
   );
 };
 
-export default IndexPage;
+export const query = graphql`
+  query {
+    mdx(frontmatter: { type: { eq: "AboutText" } }) {
+      body
+    }
+  }
+`;
+
+export default AboutPage;
