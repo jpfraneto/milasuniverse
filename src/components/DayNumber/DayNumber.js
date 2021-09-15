@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { daySpan, selectedDaySpan, nonAvailableDay } from './styles.module.css';
 
 export const DayNumber = ({
@@ -8,12 +8,15 @@ export const DayNumber = ({
   available,
   thisDay,
 }) => {
-  const [selected, setSelected] = useState(false);
   if (available) {
     return (
       <span
+        role='button'
+        tabIndex={0}
+        onKeyDown={() => {
+          setSelectedDay(thisDay);
+        }}
         onClick={() => {
-          setSelected(true);
           setSelectedDay(thisDay);
         }}
         className={
@@ -26,6 +29,11 @@ export const DayNumber = ({
   } else {
     return (
       <span
+        role='button'
+        tabIndex={0}
+        onKeyDown={() => {
+          alert('Todavía no llegamos a ese día! Paciencia...');
+        }}
         onClick={() => {
           alert('Todavía no llegamos a ese día! Paciencia...');
         }}

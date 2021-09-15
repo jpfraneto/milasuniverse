@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Layout, Cuarentena } from '../../components';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 const CuarentenaPage = ({ data }) => {
   return (
     <main>
-      <Layout pageTitle='Dia a dia de la Mila por 40 dias'>
+      <Layout pageTitle='Dia a dia de la Mila'>
         <Cuarentena diasDisponibles={data.allMdx.nodes} />
       </Layout>
     </main>

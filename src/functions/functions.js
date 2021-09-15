@@ -1,4 +1,6 @@
-const sortByDay = (prop, days) => {
+let functions = {};
+
+functions.sortByDay = (prop, days) => {
   prop = prop.split('.');
   var len = prop.length;
   days.sort(function (a, b) {
@@ -15,4 +17,10 @@ const sortByDay = (prop, days) => {
   return days;
 };
 
-export default sortByDay;
+functions.getViewerType = () => {
+  const { innerWidth: width, innerHeight: height } = window;
+  if (width > 1300) return 'huge';
+  else return 'other';
+};
+
+export default functions;

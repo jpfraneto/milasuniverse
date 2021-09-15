@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { StaticImage } from 'gatsby-plugin-image';
 import { aboutDiv, aboutImage, aboutText } from './styles.module.css';
-import { Button } from '..';
 
 export const About = ({ text }) => {
   return (

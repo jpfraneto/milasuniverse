@@ -25,6 +25,11 @@ export const Navbar = () => {
                 Bienvenida Mila
               </Link>
               <span
+                tabIndex={0}
+                role='button'
+                onKeyDown={() => {
+                  setClicked(!clicked);
+                }}
                 onClick={() => {
                   setClicked(!clicked);
                 }}
@@ -85,13 +90,13 @@ export const Navbar = () => {
                 Historias
               </Link>
             </li>
-            <li className={navLinkItem}>
-              <Link to='/todos' className={navLinkText}>
-                Todos
-              </Link>
-            </li>
           </ul>
           <span
+            role='button'
+            tabIndex={0}
+            onKeyDown={() => {
+              setClicked(!clicked);
+            }}
             onClick={() => {
               setClicked(!clicked);
             }}

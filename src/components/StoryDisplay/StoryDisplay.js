@@ -8,7 +8,6 @@ import {
   storyHeroImage,
   storyContainerDiv,
   storyAuthor,
-  dateText,
 } from './styles.module.css';
 
 export const StoryDisplay = ({ data }) => {

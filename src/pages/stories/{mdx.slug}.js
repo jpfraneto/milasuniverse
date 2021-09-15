@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Layout, StoryDisplay } from '../../components';
-import { graphql, navigate } from 'gatsby';
+import { graphql } from 'gatsby';
 
 const StoryPage = ({ data }) => {
   return (

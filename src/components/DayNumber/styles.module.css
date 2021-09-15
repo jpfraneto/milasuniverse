@@ -20,7 +20,6 @@
   width: 20px;
   height: 20px;
   margin: 4px;
-  transform: scale(1.3);
   border-radius: 50%;
   border: solid 1px black;
   cursor: pointer;
@@ -36,7 +35,7 @@
     transform: translateY(1px);
   }
   100% {
-    transform: translateY(0) scale(1.3);
+    transform: translateY(0);
     box-shadow: none;
   }
 }

@@ -12,7 +12,11 @@ const BlogPost = ({ data }) => {
       <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt} />
       <p>
         Photo credit:{' '}
-        <a target='_blank' href={data.mdx.frontmatter.hero_image_credit_link}>
+        <a
+          target='_blank'
+          rel='noreferrer'
+          href={data.mdx.frontmatter.hero_image_credit_link}
+        >
           {data.mdx.frontmatter.hero_image_credit_text}
         </a>
       </p>

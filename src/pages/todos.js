@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { Layout, About } from '../components';
-import { Link, graphql } from 'gatsby';
+import { Layout } from '../components';
 
 const TodosPage = ({ data }) => {
   return (

@@ -1,15 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { DisplayDayText } from '..';
-import {
-  mainDiv,
-  textContainer,
-  topContainer,
-  NachasDiv,
-  JPSDiv,
-} from './styles.module.css';
+import { mainDiv, textContainer, topContainer } from './styles.module.css';
 
 export const ParentsWritings = ({ date, thisText }) => {
-  const [text, setText] = useState(null);
   return (
     <div className={mainDiv}>
       <div className={topContainer}>

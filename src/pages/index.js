@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Layout, About } from '../components';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 const AboutPage = ({ data }) => {
   return (
