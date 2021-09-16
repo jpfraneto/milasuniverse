@@ -8,29 +8,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blog`,
-        path: `${__dirname}/src/content`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `general`,
-        path: `${__dirname}/src/content/general`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `cuarentena`,
         path: `${__dirname}/src/content/cuarentena`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `stories`,
-        path: `${__dirname}/src/content/stories`,
       },
     },
     'gatsby-plugin-sass',

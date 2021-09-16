@@ -46,18 +46,8 @@ export const Navbar = () => {
               </li>
 
               <li className={toggledNavItem}>
-                <Link to='/blog' className={navLinkText}>
-                  Blog
-                </Link>
-              </li>
-              <li className={toggledNavItem}>
                 <Link to='/cuarentena' className={navLinkText}>
                   Cuarentena
-                </Link>
-              </li>
-              <li className={toggledNavItem}>
-                <Link to='/stories' className={navLinkText}>
-                  Historias
                 </Link>
               </li>
             </div>
@@ -76,18 +66,8 @@ export const Navbar = () => {
             </li>
 
             <li className={navLinkItem}>
-              <Link to='/blog' className={navLinkText}>
-                Blog
-              </Link>
-            </li>
-            <li className={navLinkItem}>
               <Link to='/cuarentena' className={navLinkText}>
                 Cuarentena
-              </Link>
-            </li>
-            <li className={navLinkItem}>
-              <Link to='/stories' className={navLinkText}>
-                Historias
               </Link>
             </li>
           </ul>

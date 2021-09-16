@@ -6,18 +6,10 @@ const AboutPage = ({ data }) => {
   return (
     <main>
       <Layout pageTitle='Bienvenid@'>
-        <About text={data.mdx.body} />
+        <About text={'Bienvenidos a nuestro hogar digital!'} />
       </Layout>
     </main>
   );
 };
-
-export const query = graphql`
-  query {
-    mdx(frontmatter: { type: { eq: "AboutText" } }) {
-      body
-    }
-  }
-`;
 
 export default AboutPage;

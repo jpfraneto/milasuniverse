@@ -13,7 +13,7 @@ export const About = ({ text }) => {
         alt='The miracle of life'
       />
       <div className={aboutText}>
-        <MDXRenderer>{text}</MDXRenderer>
+        <p>{text}</p>
         <Link to='blog'>Ir al dia a dia</Link>
       </div>
     </div>

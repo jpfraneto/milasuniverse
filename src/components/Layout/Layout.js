@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Navbar } from '..';
 import { container, outerDiv, heading } from './styles.module.css';
+import '../../styles/global.css';
 
 export const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
