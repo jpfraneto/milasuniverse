@@ -5,12 +5,6 @@ module.exports = {
     title: "Mila's Universe",
   },
   plugins: [
-    'gatsby-plugin-sass',
-    'gatsby-plugin-gatsby-cloud',
-    'gatsby-plugin-mdx',
-    'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -39,5 +33,11 @@ module.exports = {
         path: `${__dirname}/src/content/stories`,
       },
     },
+    'gatsby-plugin-sass',
+    'gatsby-plugin-gatsby-cloud',
+    'gatsby-plugin-mdx',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
   ],
 };

@@ -65,7 +65,7 @@ export const Cuarentena = ({ diasDisponibles }) => {
               {diasDisponibles.map((day, index) => {
                 if (day) {
                   return <option key={index}>{day.frontmatter.day}</option>;
-                } else return;
+                } else return <></>;
               })}
             </select>
           </div>
