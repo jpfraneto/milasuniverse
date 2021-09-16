@@ -5,7 +5,7 @@ import { graphql } from 'gatsby';
 const CuarentenaPage = ({ data }) => {
   return (
     <main>
-      <Layout pageTitle='Dia a dia de la Mila'>
+      <Layout pageTitle='Dia a Dia'>
         <Cuarentena diasDisponibles={data.allMdx.nodes} />
       </Layout>
     </main>

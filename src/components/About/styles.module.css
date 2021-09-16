@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 .aboutDiv {
-  background-color: teal;
+  background-color: rgb(168, 168, 211);
   display: flex;
   padding: 8px;
 }
@@ -15,7 +15,19 @@
 .aboutText {
   padding: 8px;
   font-size: 1.6rem;
-  background-color: tomato;
+  background-color: rgb(57, 49, 60);
+  color: white;
   width: 100%;
   font-family: 'Libre Baskerville', serif;
+}
+
+.aboutText p {
+  margin-bottom: 2rem;
+}
+
+.button {
+  background-color: white;
+  border: solid black 2px;
+  padding: 8px;
+  border-radius: 3%;
 }

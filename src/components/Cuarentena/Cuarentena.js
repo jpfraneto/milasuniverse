@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import { DayDisplay, DayNumber } from '..';
 import functions from '../../functions/functions';
+import { GrPrevious, GrNext } from 'react-icons/gr';
 import {
   daysDiv,
   mainDiv,
   selectedDayOuterDiv,
   dayPicker,
+  imageBtn,
 } from './styles.module.css';
 
 export const Cuarentena = ({ diasDisponibles }) => {
@@ -34,6 +36,9 @@ export const Cuarentena = ({ diasDisponibles }) => {
     setSelectedDay(thisDay);
   };
   const changeDay = x => {
+    console.log(x, selectedDay.frontmatter.day);
+    if (x === -1 && +selectedDay.frontmatter.day === 1)
+      return alert('Este es el primer dia!');
     const newDay = diasDisponibles.filter(
       a => +a.frontmatter.day === +selectedDay.frontmatter.day + x
     )[0];
@@ -87,6 +92,12 @@ export const Cuarentena = ({ diasDisponibles }) => {
         </h2>
         <DayDisplay selectedDay={selectedDay} />
       </div>
+      <button className={imageBtn} onClick={() => changeDay(-1)}>
+        <GrPrevious />
+      </button>{' '}
+      <button className={imageBtn} onClick={() => changeDay(1)}>
+        <GrNext />
+      </button>
     </article>
   );
 };

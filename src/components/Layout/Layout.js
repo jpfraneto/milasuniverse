@@ -22,7 +22,7 @@ export const Layout = ({ pageTitle, children }) => {
           {pageTitle} | {data.site.siteMetadata.title}
         </title>
         <main>
-          <h1 className={heading}>{pageTitle}</h1>
+          <p className={heading}>{pageTitle}</p>
           {children}
         </main>
       </div>

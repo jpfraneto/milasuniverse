@@ -35,7 +35,7 @@ export const Navbar = () => {
                 }}
                 className={toggleNavBtn}
               >
-                <CgMenuBoxed style={{ color: 'grey' }} />
+                <CgMenuBoxed style={{ color: 'black', opacity: '0.5' }} />
               </span>
             </li>
             <div className={toggledList}>

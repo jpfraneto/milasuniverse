@@ -27,11 +27,29 @@
 .dayPicker {
   background-color: pink;
   width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  height: 33px;
+  border-radius: 4%;
   font-size: 2rem;
   text-align: center;
+  cursor: pointer;
 }
 
-@media only screen and (max-width: 1300px) {
+.imageBtn {
+  margin: 0 0.4rem 0 0.4rem;
+  font-size: 2rem;
+  padding: 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.imageBtn:hover {
+  font-size: 2rem;
+  padding: 0;
+  background-color: rgb(228, 227, 227);
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.imageBtn:active {
+  transform: translateY(-1px);
 }

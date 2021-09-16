@@ -2,20 +2,21 @@
   width: 20px;
   height: 20px;
   margin: 4px;
-  background-color: tomato;
+  background-color: #c38df5;
   border-radius: 50%;
   border: solid 1px black;
   cursor: pointer;
 }
 
 .daySpan:hover {
-  background-color: yellowgreen;
+  background-color: #663793;
+  color: white;
   transform: translateY(-1px);
   box-shadow: black 1px 1px;
 }
 
 .selectedDaySpan {
-  background-color: rgb(162, 63, 46);
+  background-color: #9327f7;
   color: white;
   width: 20px;
   height: 20px;
