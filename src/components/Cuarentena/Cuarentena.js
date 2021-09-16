@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import { DayDisplay, DayNumber } from '..';
 import functions from '../../functions/functions';
@@ -10,6 +10,15 @@ import {
 } from './styles.module.css';
 
 export const Cuarentena = ({ diasDisponibles }) => {
+  const [viewerType, setViewerType] = useState('');
+  useEffect(() => {
+    const getViewerType = () => {
+      const { innerWidth: width, innerHeight: height } = window;
+      if (width > 1300) setViewerType('huge');
+      else setViewerType('other');
+    };
+    getViewerType();
+  });
   diasDisponibles = functions.sortByDay('frontmatter.day', diasDisponibles);
   const [selectedDay, setSelectedDay] = useState(
     diasDisponibles[diasDisponibles.length - 1]
@@ -24,7 +33,6 @@ export const Cuarentena = ({ diasDisponibles }) => {
     )[0];
     setSelectedDay(thisDay);
   };
-  const viewerType = functions.getViewerType();
   const changeDay = x => {
     const newDay = diasDisponibles.filter(
       a => +a.frontmatter.day === +selectedDay.frontmatter.day + x

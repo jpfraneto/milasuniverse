@@ -17,10 +17,4 @@ functions.sortByDay = (prop, days) => {
   return days;
 };
 
-functions.getViewerType = () => {
-  const { innerWidth: width, innerHeight: height } = window;
-  if (width > 1300) return 'huge';
-  else return 'other';
-};
-
 export default functions;
