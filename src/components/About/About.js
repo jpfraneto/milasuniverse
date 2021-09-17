@@ -17,8 +17,8 @@ export const About = ({ text }) => {
           Este es un espacio que vamos a ir construyendo en conjunto para
           compartir la experiencia de ser papás por primera vez contigo. Los
           primeros 40 días de existencia de nuestra Mila van a ser un espacio
-          importante para (re)conocernos, entregarnos cariño y amor. Junto con
-          todo lo que vendrá en el futuro.
+          importante para (re)conocernos entregándonos cariño y amor, y es
+          nuestra intención vivirlo intensamente, disfrutando cada momento.
         </p>
         <p>
           Estamos muy contentos de lo que estamos viviendo, y día a día
@@ -28,7 +28,7 @@ export const About = ({ text }) => {
         </p>
         <p>
           Gracias por estar acá, y por preocuparte de nosotros y de cómo va
-          avanzando este proceso.
+          creciendo nuestra hija :)
         </p>
         <p>Nacha, JP y Mila</p>
         <Link className={button} to='cuarentena'>

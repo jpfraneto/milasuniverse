@@ -75,7 +75,7 @@ export const Cuarentena = ({ diasDisponibles }) => {
       <div className={btnsDiv}>
         {+selectedDay.frontmatter.day !== 1 && (
           <button className={imageBtn} onClick={() => changeDay(-1)}>
-            <GrPrevious className={btnIcon} /> Día Anterior
+            <GrPrevious className={btnIcon} /> Anterior
           </button>
         )}
         {+selectedDay.frontmatter.day !== diasDisponibles.length && (
@@ -85,11 +85,11 @@ export const Cuarentena = ({ diasDisponibles }) => {
               changeDay(1);
             }}
           >
-            Día Siguiente <GrNext className={btnIcon} />
+            Siguiente <GrNext className={btnIcon} />
           </button>
         )}
         <p className={swipeMsg}>
-          (También puedes cambiar la imagen deslizando hacia un lado)
+          También puedes cambiar la imagen deslizando hacia un lado
         </p>
       </div>
     </article>

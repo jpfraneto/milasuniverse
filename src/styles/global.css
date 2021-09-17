@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Over+the+Rainbow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@300&display=swap');
 *,
 *::after,
 *::before {
@@ -8,7 +11,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Niramit', sans-serif;
   background-color: #dab6fc;
 }
 

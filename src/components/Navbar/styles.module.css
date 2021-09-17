@@ -1,12 +1,14 @@
 .nav-title {
-  display: flex;
   color: black;
+  font-family: 'Snowburst One', cursive;
 }
 
-.nav-title:hover {
-  display: flex;
-  color: #000;
-  cursor: pointer;
+.btnTogglee {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  color: black;
+  font-size: 11rem;
 }
 
 .nav-title:link {
@@ -14,10 +16,9 @@
 }
 
 .navbar {
-  position: relative;
-  font-size: 2.6rem;
+  text-align: center;
+  font-size: 4rem;
   background-color: #757bc8;
-  display: flex;
   padding: 0 2rem;
   border-bottom: 2px solid black;
 }

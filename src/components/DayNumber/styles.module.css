@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Over+the+Rainbow&family=Roboto:wght@100;300&display=swap');
+
 span {
   font-size: 2.3rem;
   padding: 2px;
@@ -7,6 +9,8 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .daySpan {
