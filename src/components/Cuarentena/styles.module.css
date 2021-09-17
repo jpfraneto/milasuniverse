@@ -2,9 +2,14 @@
   text-align: center;
 }
 
+.btnsDiv {
+  margin-bottom: 2rem;
+}
+
 .daysDiv {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 
 .selectedDayOuterDiv {
@@ -37,19 +42,43 @@
 .imageBtn {
   margin: 0 0.4rem 0 0.4rem;
   font-size: 2rem;
-  padding: 0;
+  padding: 8px;
+  vertical-align: middle;
+  text-align: center;
   background-color: white;
   cursor: pointer;
 }
 
-.imageBtn:hover {
+.swipeMsg {
   font-size: 2rem;
-  padding: 0;
-  background-color: rgb(228, 227, 227);
-  transform: translateY(-2px);
-  cursor: pointer;
+  display: none;
+}
+
+.imageBtn:hover {
+  background-color: whitesmoke;
+  transform: translateY(-3px);
+  box-shadow: black 2px 2px;
 }
 
 .imageBtn:active {
   transform: translateY(-1px);
+  box-shadow: black 1px 1px;
+}
+
+.btnIcon {
+  transform: translateY(3px);
+}
+
+.diaText {
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .daysDiv {
+    justify-content: left;
+  }
+
+  .swipeMsg {
+    display: block;
+  }
 }

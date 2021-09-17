@@ -10,6 +10,7 @@ import {
   toggledNavList,
   toggledNavItem,
   toggledList,
+  milaName,
 } from './styles.module.css';
 import { CgMenuBoxed } from 'react-icons/cg';
 
@@ -47,7 +48,7 @@ export const Navbar = () => {
 
               <li className={toggledNavItem}>
                 <Link to='/cuarentena' className={navLinkText}>
-                  Cuarentena
+                  Día a Día
                 </Link>
               </li>
             </div>
@@ -67,7 +68,7 @@ export const Navbar = () => {
 
             <li className={navLinkItem}>
               <Link to='/cuarentena' className={navLinkText}>
-                Cuarentena
+                Día a Día
               </Link>
             </li>
           </ul>

@@ -21,10 +21,7 @@ export const Layout = ({ pageTitle, children }) => {
         <title>
           {pageTitle} | {data.site.siteMetadata.title}
         </title>
-        <main>
-          <p className={heading}>{pageTitle}</p>
-          {children}
-        </main>
+        <main>{children}</main>
       </div>
     </div>
   );

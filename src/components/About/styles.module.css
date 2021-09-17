@@ -28,6 +28,31 @@
 .button {
   background-color: white;
   border: solid black 2px;
-  padding: 8px;
-  border-radius: 3%;
+  padding: 3px;
+  border-radius: 6%;
+}
+
+.button a {
+  margin-bottom: 2rem;
+}
+
+.button:link {
+  margin-bottom: 2rem;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .aboutDiv {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+  }
+  .aboutImage {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+  }
 }

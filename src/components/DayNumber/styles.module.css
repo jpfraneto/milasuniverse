@@ -1,7 +1,15 @@
+span {
+  font-size: 2.3rem;
+  padding: 2px;
+  width: 35px;
+  height: 35px;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .daySpan {
-  width: 20px;
-  height: 20px;
-  margin: 4px;
   background-color: #c38df5;
   border-radius: 50%;
   border: solid 1px black;
@@ -18,9 +26,6 @@
 .selectedDaySpan {
   background-color: #9327f7;
   color: white;
-  width: 20px;
-  height: 20px;
-  margin: 4px;
   border-radius: 50%;
   border: solid 1px black;
   cursor: pointer;
@@ -44,9 +49,6 @@
 .nonAvailableDay {
   background-color: transparent;
   color: black;
-  width: 20px;
-  height: 20px;
-  margin: 4px;
   border-radius: 50%;
   border: solid 1px black;
   cursor: not-allowed;
