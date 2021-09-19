@@ -12,3 +12,4 @@ export * from './DayDisplay';
 export * from './MilasImage';
 export * from './ParentsWritings';
 export * from './DisplayDayText';
+export * from './ImageModal';

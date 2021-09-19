@@ -14,7 +14,7 @@ import {
   swipeMsg,
 } from './styles.module.css';
 
-export const Cuarentena = ({ diasDisponibles }) => {
+export const Cuarentena = ({ diasDisponibles, setModalImage }) => {
   const myRef = useRef(null);
   const executeScroll = () => {
     myRef.current.scrollIntoView();
@@ -70,7 +70,7 @@ export const Cuarentena = ({ diasDisponibles }) => {
             ? `Dia ${selectedDay.frontmatter.day}: ${selectedDay.frontmatter.title}`
             : `Selecciona un Dia, de los ${diasDisponibles.length} disponibles`}
         </h2>
-        <DayDisplay selectedDay={selectedDay} />
+        <DayDisplay setModalImage={setModalImage} selectedDay={selectedDay} />
       </div>
       <div className={btnsDiv}>
         {+selectedDay.frontmatter.day !== 1 && (

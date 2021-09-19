@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { aboutDiv, aboutImage, aboutText, button } from './styles.module.css';
 
-export const About = ({ text }) => {
+export const About = ({}) => {
   return (
     <div className={aboutDiv}>
       <StaticImage

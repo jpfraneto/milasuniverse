@@ -1,7 +1,7 @@
 .fotoMila {
   border: white 5px solid;
   padding: 8px;
-  margin: 8px;
+  margin-right: 8px;
   border-radius: 1%;
   width: auto;
   height: auto;
@@ -9,6 +9,8 @@
 
 @media only screen and (max-width: 800px) {
   .fotoMila {
+    margin-right: 0px;
+    margin-bottom: 8px;
     width: 100%;
     height: auto;
     overflow: auto;

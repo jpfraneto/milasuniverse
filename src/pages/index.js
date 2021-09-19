@@ -6,7 +6,7 @@ const AboutPage = ({ data }) => {
   return (
     <main>
       <Layout pageTitle='Bienvenid@'>
-        <About text={'Bienvenidos a nuestro hogar digital!'} />
+        <About />
       </Layout>
     </main>
   );

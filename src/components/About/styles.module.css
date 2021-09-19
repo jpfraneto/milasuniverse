@@ -2,6 +2,7 @@
 
 .aboutDiv {
   display: flex;
+  margin: 0;
   border-top-left-radius: 1%;
   border-bottom-left-radius: 1%;
 }
@@ -9,7 +10,7 @@
 .aboutImage {
   border: white 5px solid;
   padding: 8px;
-  margin: 8px;
+  margin-right: 8px;
   border-radius: 1%;
   width: 100%;
   height: auto;
@@ -26,7 +27,7 @@
   width: 60%;
   font-family: 'Libre Baskerville', serif;
   font-size: 1.5rem;
-  padding: 3px;
+  padding: 12px;
 }
 
 .aboutText p {
@@ -64,8 +65,11 @@
     width: 100%;
     height: auto;
     overflow: auto;
+    margin-right: 0;
+    margin-bottom: 8px;
   }
   .aboutText {
+    margin-left: 0;
     width: 100%;
   }
 }

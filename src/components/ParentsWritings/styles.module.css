@@ -1,7 +1,6 @@
 .mainDiv {
   border: solid 2px black;
   border-radius: 2px;
-  margin: 8px;
   display: flex;
   overflow-y: scroll;
   flex-flow: column;

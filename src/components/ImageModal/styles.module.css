@@ -1,0 +1,5 @@
+.modalImage {
+  width: 100vh;
+  height: 100vh;
+  z-index: 100;
+}
