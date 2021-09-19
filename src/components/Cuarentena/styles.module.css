@@ -1,5 +1,6 @@
 .mainDiv {
   text-align: center;
+  height: 100vh;
 }
 
 .btnsDiv {
@@ -9,6 +10,7 @@
 .daysDiv {
   border: 2px solid black;
   padding: 4px 8px;
+  background-color: antiquewhite;
   border-radius: 2px;
   display: flex;
   flex-wrap: wrap;
@@ -64,6 +66,7 @@
 
 .diaText {
   font-size: 2.5rem;
+  font-weight: bold;
   margin: 2rem;
 }
 

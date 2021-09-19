@@ -2,7 +2,9 @@
   border: solid 2px black;
   border-radius: 2px;
   display: flex;
-  overflow-y: scroll;
+  min-height: 100px;
+  margin: auto 0 auto 20px;
+  overflow: hidden;
   flex-flow: column;
   height: auto;
   width: 60%;
@@ -19,7 +21,7 @@
   font-size: 1.2rem;
   padding: 8px;
   overflow-y: scroll;
-  background-color: #bb9fa8;
+  background-color: antiquewhite;
   color: black;
   flex: 1 1 auto;
   width: 100%;
