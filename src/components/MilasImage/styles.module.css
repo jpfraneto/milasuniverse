@@ -1,8 +1,9 @@
 .fotoMila {
-  width: 444px;
   border: white 5px solid;
   padding: 8px;
+  margin: 8px;
   border-radius: 1%;
+  width: auto;
   height: auto;
 }
 

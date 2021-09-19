@@ -1,6 +1,4 @@
 .container {
-  height: 66vh;
-  background: rgb(168, 168, 211);
   display: flex;
   margin-bottom: 2rem;
   border-top-left-radius: 1%;

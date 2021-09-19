@@ -1,24 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 .aboutDiv {
-  background-color: rgb(168, 168, 211);
   display: flex;
-  padding: 8px;
+  border-top-left-radius: 1%;
+  border-bottom-left-radius: 1%;
 }
 
 .aboutImage {
-  width: 60vh;
+  border: white 5px solid;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 1%;
+  width: 100%;
   height: auto;
-  border-radius: 2px;
 }
 
 .aboutText {
-  padding: 8px;
-  font-size: 1.6rem;
-  background-color: #bb9fa8;
-  color: black;
-  width: 100%;
+  border: solid 2px black;
+  border-radius: 2px;
+  margin: 8px;
+  display: flex;
+  overflow-y: scroll;
+  flex-flow: column;
+  height: auto;
+  width: 60%;
   font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+  padding: 3px;
 }
 
 .aboutText p {
@@ -30,6 +38,8 @@
   border: solid black 2px;
   padding: 3px;
   border-radius: 6%;
+  width: 150px;
+  text-align: center;
 }
 
 .button a {
@@ -53,6 +63,9 @@
   .aboutImage {
     width: 100%;
     height: auto;
-    border-radius: 2px;
+    overflow: auto;
+  }
+  .aboutText {
+    width: 100%;
   }
 }

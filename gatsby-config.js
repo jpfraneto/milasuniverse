@@ -2,7 +2,7 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: "Mila's Universe",
+    title: 'Bienvenida Mila!',
   },
   plugins: [
     {
@@ -10,6 +10,17 @@ module.exports = {
       options: {
         name: `cuarentena`,
         path: `${__dirname}/src/content/cuarentena`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Bienvenida Mila',
+        short_name: 'Bienvenida Mila',
+        start_url: '/',
+        display: 'standalone',
+        icon: 'src/images/icon.png',
+        crossOrigin: `use-credentials`,
       },
     },
     'gatsby-plugin-sass',

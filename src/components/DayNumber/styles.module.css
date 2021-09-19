@@ -14,22 +14,24 @@ span {
 }
 
 .daySpan {
-  background-color: #c38df5;
+  background-color: #f3e1e2;
   border-radius: 50%;
   border: solid 1px black;
   cursor: pointer;
 }
 
 .daySpan:hover {
-  background-color: #663793;
+  background-color: #dbc8cb;
   color: white;
   transform: translateY(-1px);
   box-shadow: black 1px 1px;
 }
 
 .selectedDaySpan {
-  background-color: #9327f7;
+  background-color: #8c787f;
   color: white;
+  font-weight: bold;
+  box-shadow: 1px 1px black;
   border-radius: 50%;
   border: solid 1px black;
   cursor: pointer;
@@ -39,14 +41,14 @@ span {
 @keyframes pushBtn {
   0% {
     transform: translateY(-1px);
-    box-shadow: black 1px 1px;
+    box-shadow: none;
   }
   50% {
     transform: translateY(1px);
   }
   100% {
     transform: translateY(0);
-    box-shadow: none;
+    box-shadow: black 1px 1px;
   }
 }
 
