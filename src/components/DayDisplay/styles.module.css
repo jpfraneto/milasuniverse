@@ -1,9 +1,20 @@
 .container {
   display: flex;
+  justify-content: center;
+  align-self: center;
   height: 100%;
   margin-bottom: 2rem;
   border-top-left-radius: 1%;
   border-bottom-left-radius: 1%;
+}
+
+.imageBtn {
+  cursor: pointer;
+  margin: auto 1rem;
+}
+
+.btnIcon {
+  font-size: 5rem;
 }
 
 @media only screen and (max-width: 800px) {
@@ -14,5 +25,8 @@
     border-bottom-left-radius: 0;
     border-top-left-radius: 1%;
     border-top-right-radius: 1%;
+  }
+  .imageBtn {
+    display: none;
   }
 }

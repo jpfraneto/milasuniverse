@@ -32,7 +32,7 @@ export const About = ({}) => {
         </p>
         <p>Nacha, JP y Mila</p>
         <Link className={button} to='cuarentena'>
-          Ir al dia a dia
+          Ir al día a día
         </Link>
       </div>
     </div>

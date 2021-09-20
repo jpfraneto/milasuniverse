@@ -1,18 +1,17 @@
 .fotoMila {
-  border: white 5px solid;
+  border: black 1px solid;
   padding: 8px;
   margin-right: 8px;
   border-radius: 1%;
   width: auto;
-  height: 100vh;
+  height: 90vh;
 }
 
 @media only screen and (max-width: 800px) {
   .fotoMila {
     margin-right: 0px;
     margin-bottom: 8px;
-    width: 100%;
-    height: auto;
-    overflow: auto;
+    overflow: visible;
+    max-height: 100vh;
   }
 }

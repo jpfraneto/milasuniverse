@@ -17,6 +17,7 @@ html {
 
 body {
   box-sizing: border-box;
+  padding-bottom: 20px;
 }
 
 a {

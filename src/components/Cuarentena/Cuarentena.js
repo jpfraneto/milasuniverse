@@ -15,10 +15,6 @@ import {
 } from './styles.module.css';
 
 export const Cuarentena = ({ diasDisponibles, setModalImage }) => {
-  const myRef = useRef(null);
-  const executeScroll = () => {
-    myRef.current.scrollIntoView();
-  };
   diasDisponibles = functions.sortByDay('frontmatter.day', diasDisponibles);
   const [selectedDay, setSelectedDay] = useState(
     diasDisponibles[diasDisponibles.length - 1]
@@ -40,7 +36,6 @@ export const Cuarentena = ({ diasDisponibles, setModalImage }) => {
       a => +a.frontmatter.day === +selectedDay.frontmatter.day + x
     )[0];
     if (newDay) {
-      executeScroll();
       setSelectedDay(newDay);
     } else alert('Estás viendo el último día disponible!');
   };
@@ -49,7 +44,7 @@ export const Cuarentena = ({ diasDisponibles, setModalImage }) => {
     onSwipedRight: () => changeDay(-1),
   });
   return (
-    <article {...handlers} className={mainDiv}>
+    <div {...handlers} className={mainDiv}>
       <div className={daysDiv}>
         {days.map((day, index) => {
           return (
@@ -65,33 +60,22 @@ export const Cuarentena = ({ diasDisponibles, setModalImage }) => {
         })}
       </div>
       <div className={selectedDayOuterDiv}>
-        <h2 ref={myRef} className={diaText}>
+        <h2 className={diaText}>
           {selectedDay
-            ? `Dia ${selectedDay.frontmatter.day}: ${selectedDay.frontmatter.title}`
-            : `Selecciona un Dia, de los ${diasDisponibles.length} disponibles`}
+            ? `Día ${selectedDay.frontmatter.day}: ${selectedDay.frontmatter.title}`
+            : `Selecciona un Día, de los ${diasDisponibles.length} disponibles`}
         </h2>
-        <DayDisplay setModalImage={setModalImage} selectedDay={selectedDay} />
+        <DayDisplay
+          changeDay={changeDay}
+          setModalImage={setModalImage}
+          selectedDay={selectedDay}
+        />
       </div>
       <div className={btnsDiv}>
-        {+selectedDay.frontmatter.day !== 1 && (
-          <button className={imageBtn} onClick={() => changeDay(-1)}>
-            <GrPrevious className={btnIcon} /> Anterior
-          </button>
-        )}
-        {+selectedDay.frontmatter.day !== diasDisponibles.length && (
-          <button
-            className={imageBtn}
-            onClick={() => {
-              changeDay(1);
-            }}
-          >
-            Siguiente <GrNext className={btnIcon} />
-          </button>
-        )}
         <p className={swipeMsg}>
-          También puedes cambiar la imagen deslizando hacia un lado
+          Puedes cambiar la imagen deslizando hacia un lado!
         </p>
       </div>
-    </article>
+    </div>
   );
 };
