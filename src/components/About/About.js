@@ -31,7 +31,7 @@ export const About = ({}) => {
           creciendo nuestra hija :)
         </p>
         <p>Nacha, JP y Mila</p>
-        <Link className={button} to='cuarentena'>
+        <Link className={button} to='diaadia'>
           Ir al día a día
         </Link>
       </div>

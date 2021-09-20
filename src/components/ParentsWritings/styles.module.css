@@ -12,8 +12,10 @@
 
 .topContainer {
   background-color: white;
+  border-bottom: 1px solid black;
   width: 100%;
   font-size: 2rem;
+  padding-bottom: 3px;
   flex: 0 1 auto;
 }
 
@@ -25,6 +27,27 @@
   color: black;
   flex: 1 1 auto;
   width: 100%;
+}
+
+.textSizer {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 2px;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.fontSizeBtn {
+  cursor: pointer;
+}
+
+.fontSizeText {
+  transform: translateY(8px);
 }
 
 @media only screen and (max-width: 800px) {

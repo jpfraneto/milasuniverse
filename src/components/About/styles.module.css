@@ -35,8 +35,9 @@
 }
 
 .button {
-  background-color: white;
+  background: url('../../images/background.jpeg');
   border: solid black 2px;
+  color: black;
   padding: 3px;
   margin: 0 auto;
   border-radius: 2px;
@@ -45,8 +46,17 @@
   text-align: center;
 }
 
+.button:hover {
+  box-shadow: black 2px 2px;
+}
+
+.button:active {
+  box-shadow: black 1px 1px;
+}
+
 .button a {
   margin-bottom: 2rem;
+  text-decoration: none;
 }
 
 .button:link {
