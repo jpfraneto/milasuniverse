@@ -33,6 +33,6 @@
     margin: 0;
   }
   .textContainer {
-    height: 88vh;
+    max-height: 88vh;
   }
 }
