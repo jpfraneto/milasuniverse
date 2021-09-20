@@ -77,11 +77,10 @@
     width: auto;
     max-height: 2222px;
     height: 100%;
-    margin-right: 0;
-    margin-bottom: 8px;
+    margin: 0 8px 8px 8px;
   }
   .aboutText {
-    margin-left: 0;
-    width: 100%;
+    margin: 0 8px 8px 8px;
+    width: auto;
   }
 }
