@@ -8,9 +8,7 @@ import {
   mainDiv,
   selectedDayOuterDiv,
   diaText,
-  imageBtn,
   btnsDiv,
-  btnIcon,
   swipeMsg,
 } from './styles.module.css';
 

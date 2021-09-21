@@ -1,13 +1,20 @@
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { aboutDiv, aboutImage, aboutText, button } from './styles.module.css';
 
 export const About = ({}) => {
+  const [imageSource, setImageSource] = useState(null);
+  useEffect(() => {
+    const random = Math.ceil(9 * Math.random());
+    const source = `../../images/nosotros/${random}.jpeg`;
+    console.log('the source is: ', source);
+    setImageSource(random);
+  }, []);
   return (
     <div className={aboutDiv}>
       <StaticImage
-        src='../../images/10s1.jpeg'
+        src={`../../images/nosotros/7.jpeg`}
         className={aboutImage}
         alt='The miracle of life'
       />
