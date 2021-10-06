@@ -2,7 +2,7 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: 'Hola Mila!',
+    title: 'Hola Mila',
   },
   plugins: [
     {

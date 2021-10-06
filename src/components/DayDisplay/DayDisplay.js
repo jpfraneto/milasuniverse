@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { MilasImage, ParentsWritings, ImageModal } from '..';
-import { container, imageBtn, btnIcon } from './styles.module.css';
-import { GrPrevious, GrNext } from 'react-icons/gr';
-import { BiRightArrow, BiLeftArrow } from 'react-icons/bi';
+import { container, imageBtn, btnIcon, elementsDiv } from './styles.module.css';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
 export const DayDisplay = ({ selectedDay, changeDay }) => {
   const [modalImage, setModalImage] = useState(null);
+  const image = getImage(selectedDay.frontmatter.hero_image);
   return (
     <div className={container}>
       {/* {modalImage && (
