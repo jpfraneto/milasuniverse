@@ -14,7 +14,7 @@ export const About = ({}) => {
   return (
     <div className={aboutDiv}>
       <StaticImage
-        src={`../../images/nosotros/7.jpeg`}
+        src={`../../images/nosotros/nueva.jpg`}
         className={aboutImage}
         alt='The miracle of life'
       />
