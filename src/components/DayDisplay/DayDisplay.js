@@ -9,9 +9,6 @@ export const DayDisplay = ({ selectedDay, changeDay }) => {
   const image = getImage(selectedDay.frontmatter.hero_image);
   return (
     <div className={container}>
-      {/* {modalImage && (
-        <ImageModal setModalImage={setModalImage} image={modalImage} />
-      )} */}
       <span className={imageBtn} onClick={() => changeDay(-1)}>
         <FaArrowCircleLeft className={btnIcon} />
       </span>
